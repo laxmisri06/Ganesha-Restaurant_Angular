@@ -1,0 +1,47 @@
+.right-content {
+  width: 100%;
+  background: url(../../../assets/404notfound.jpg);
+  background-size: cover;
+  position: relative;
+  color: white;
+  height: 100vh;
+  padding: 10%;
+}
+
+.notfound-content {
+  font-size: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.notfound {
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.notfound-btn {
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  border: 2px solid #E2B04D;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+}
+
+button.bck-btn {
+  background: transparent;
+  border: none;
+  color: white;
+}

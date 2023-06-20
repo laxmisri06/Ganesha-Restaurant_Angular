@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Main */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-family: 'Signika', sans-serif !important;
+  font-size: 13px;
+}
+
+
+/*Breadscrum*/
+ol.breadcrumb {
+  background: transparent;
+  padding: 10px;
+  margin: 0 0 5px;
+  display: flex;
+  justify-content: center;
+}
+
+ol.breadcrumb li {
+  padding-right: 20px;
+  position: relative;
+  font-weight: 500;
+  padding-right: 20px;
+  position: relative;
+  font-weight: 500;
+  color: white;
+  font-size: 30px;
+}
+
+ol.breadcrumb li a {
+  color: #6b6b6b;
+  padding-right: 18px;
+}
+
+ol.breadcrumb li.active {
+  color: #3580c3;
+  font-weight: 300;
+  transition: 5s;
+}
+
+ol.breadcrumb li:last-child {
+  margin-right: 0;
+}
+
+ol.breadcrumb li:after {
+  content: ">";
+  position: absolute;
+  right: 10px;
+  color: white;
+  top: 2px;
+}
+
+ol.breadcrumb li:last-child:after {
+  content: unset;
+}
+
+.home_tab {
+  cursor: pointer;
+}
+
+.breadcrum_img {
+  width: 100%;
+  background: url(../src/assets/menubk.jpg);
+  background-size: cover;
+  position: relative;
+  height: 60vh;
+}
+
+.page_head {
+  display: block;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 49px;
+  padding-bottom: 30px;
+}
+
+.current-page {
+  color: #E2B04D !important;
+}
+
+.home-page a:hover {
+  color: #E2B04D !important;
+  cursor: pointer;
+}
+
+@media(max-width:959px) {
+  .breadcrum_img {
+    background: url(../src/assets/menubk.jpg);
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    width: 103%;
+  }
+}

@@ -1,0 +1,503 @@
+
+<div id="container">
+  
+  <app-header>
+  
+    <!-- <mat-sidenav-container>
+      <mat-sidenav #sidenav role="navigation" class="opensidenav">
+        <app-side-nav (SideNavClose)="sidenav.close()"></app-side-nav>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+      </mat-sidenav-content>
+    </mat-sidenav-container> -->
+  </app-header>
+  <div class="header-one">
+    <div class="header-left app-color">
+      <div class="Welcome-content">
+        <div class="Welcome-note">
+          <span class="welcome-text">
+            Welcome to {{site_name}}</span>
+          <br />
+          <div class="healthy-cnt">
+            <span class="healthy-txt">
+              Healthy
+            </span>
+            <span class="meals">
+              Fresh Meals!
+            </span>
+          </div>
+        </div>
+
+        <div class="opem-timimgs">
+          <span class="open-tme">
+            Open Monday to Saturday -
+          </span> <span style="font-weight: bold"> 6 Pm to 10 Pm
+          </span>
+          <!--<span class="marquee">Open Everyday - 7 Am to 10 Pm</span>-->
+        </div>
+      </div>
+    </div>
+    <div class="header-right">
+      <!--<hello  [ngStyle]="{'background-image':'url("C:/angular6/AngularApp6/src/assets/mainimg.jpg")', display: 'block'}"></hello>-->
+
+      <div class="right-content">
+        <div class="food-timings">
+          <!--   <p class="food-link">
+            South Indian cuisine includes the cuisines of the five southern states of India—Andhra Pradesh, Karnataka,
+            Kerala, Tamil Nadu and Telangana—and the union territories of Lakshadweep, Pondicherry, and the Andaman and
+            Nicobar Islands.There are typically vegetarian and non-vegetarian dishes for all five states. Additionally,
+            all regions have typical main dishes, snacks, light meals, desserts, and drinks that are well known in their
+            respective region.
+          </p>-->
+          <div class="Breakfast-menumain">
+            <mat-card class="Breakfast-menu">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title class="card-title">Lunch</mat-card-title>
+              </mat-card-header>
+              <mat-card-actions>
+                <button class="more-btn" mat-button (click)="onClicmenu()">More ></button>
+              </mat-card-actions>
+              <img class="img1-card" mat-card-image src="./assets/breakfast.jpg" alt="Photo of a Shiba Inu">
+            </mat-card>
+          </div>
+          <div class="lunch-menumain">
+            <mat-card class="lunch-menu">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title class="card-title">Dinner</mat-card-title>
+              </mat-card-header>
+              <mat-card-actions>
+                <button class="more-btn" mat-button (click)="onClicmenu()">More ></button>
+              </mat-card-actions>
+              <img class="img1-card" mat-card-image src="./assets/lunch.jpg" alt="Photo of a Shiba Inu">
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="best-dishes-content">
+
+
+    <div class="dishes-image-right">
+      <!-- <img class="imginside-one" alt="idly-image" src="./assets/samosa.jpg">
+        <img class="imginside-two" alt="idly-image" src="./assets/vadai.jpg"> -->
+      <div class="dishes-h1">
+        The Amazing Bitros &
+        Delicious Food
+      </div>
+      <div class="dishes-h1-content">
+        <p>Welcome to the Restaurant Ganesha Frankfurt! <br><br>
+
+          Meet Your Expectations Can Not Be Our Aim. We Want To Exceed Your Expectations.<br><br>
+
+          With a unique atmosphere, in which our valued guests feel very comfortable. With a kitchen, which always makes
+          for culinary surprises. With a perfect service that is as unobtrusive as good background music.<br><br>
+
+          not less not more well - we want to be the best for our valued guests. On look forward to welcoming your
+          Ganesha Team!<br><br>
+
+          Our goal is to help you enjoy the little things in life that matter. So eat delicious food. Grab a drink. But
+          most of all, relax! We thank you from the bottom of our hearts for your continued support.<br><br>
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="dishes-prices">
+    <div class="dishes-left">
+      <div class="dishlft-hd">
+        Our dishes
+      </div>
+      <div class="disheslft-txt">
+        <div class="dilft-txt">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, eaque ipsa quae ab illo
+          inventore.
+        </div>
+        <div class="dish-tablo">
+          <div class="dish-menus">
+            <div class="main-dishmenu">
+              <div class="dish-menu1-lft">
+                Vadai(2 Stück) mit Sambar
+              </div>
+              <div class="dish-menu1-rght">
+                3,00€
+              </div>
+            </div>
+          </div>
+          <div class="dish-menus">
+            <div class="main-dishmenu">
+              <div class="dish-menu2-lft">
+                Samosa(2 Stück)
+              </div>
+              <div class="dish-menu2-rght">
+                3,50€
+              </div>
+            </div>
+          </div>
+          <div class="dish-menus">
+            <div class="main-dishmenu">
+              <div class="dish-menu3-lft">
+                Mutton rolle(2 Stück)
+              </div>
+              <div class="dish-menu3-rght">
+                3,50€
+              </div>
+            </div>
+          </div>
+          <div class="dish-menus">
+            <div class="main-dishmenu">
+              <div class="dish-menu4-lft">
+                Papadam mit 3 vershiedenen soßen
+              </div>
+              <div class="dish-menu4-rght">
+                3,50€
+              </div>
+            </div>
+          </div>
+          <div class="dish-menus">
+            <div class="main-dishmenu">
+              <div class="dish-menu5-lft">
+                Chicken pakora
+              </div>
+              <div class="dish-menu5-rght">
+                3,50€
+              </div>
+            </div>
+          </div>
+          <div class="dish-menus">
+            <div class="main-dishmenu">
+              <div class="dish-menu6-lft">
+                Veg pakaro
+              </div>
+              <div class="dish-menu6-rght">
+                3,50€
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-more-dishes">
+        <button type="submit" class="view-btn" (click)="onViewMore()">View More</button>
+      </div>
+    </div>
+    <div class="dishes-right">
+      <div class="dishes-image-right">
+        <img class="imginside-one" alt="idly-image" src="./assets/samosa.jpg">
+        <img class="imginside-two" alt="idly-image" src="./assets/vadai.jpg">
+       <!--  <div class="slider">
+          <div class="slider-images">
+            <div class="img-main-cont">
+              <div class="image-container">
+                <input type="radio" name="slide" id="img1" checked>
+                <input type="radio" name="slide" id="img2">
+                <input type="radio" name="slide" id="img3">
+                <input type="radio" name="slide" id="img4">
+                <img src="/assets/samosa.jpg" class="m1" />
+                <img src="/assets/roll.jpg" class="m2" />
+                <img src="/assets/vadai.jpg" class="m3" />
+                <img src="/assets/vadai.jpg" class="m4" />
+              </div>
+            </div>
+            <div class="btn-dots">
+              <label for="img1"></label>
+              <label for="img2"></label>
+              <label for="img3"></label>
+              <label for="img4"></label>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="specialMeals-content">
+    <div class="splMeals-header">
+      Our Specials
+    </div>
+    <div class="splMeals-txt">
+      <div class="spl-txt">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, eaque ipsa quae ab illo
+        inventore.
+      </div>
+    </div>
+    <div class="splMeals-imgcontainer">
+      <div class="splMeals-img">
+        <div class="img-onecnt1" ontouchstart="this.classList.toggle('hover')">
+          <div class="flipper-img">
+            <div class="front">
+              <div class="img-one">
+                <img class="imgs-one" alt="idly-image" src="./assets/idly.jpg">
+              </div>
+              <!-- <div class="spl-h1">
+                Idly with Curry
+              </div> -->
+            </div>
+            <div class="back">
+              <div class="flip-content1">
+                <div class="flip-cnt-h1">
+                  Idly with Curry
+                </div>
+                <div class="flip-cnt-txt">
+                  Idli or idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as
+                  breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting
+                  of fermented black lentils and rice.
+                </div>
+                <div class="public-review">
+                  <div class="like-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          thumb_up
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">12 Likes</div>
+                  </div>
+                  <div class="comment-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          maps_ugc
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">6 Comments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-onecnt2" ontouchstart="this.classList.toggle('hover')">
+          <div class="flipper-img">
+            <div class="front">
+              <div class="img-two">
+                <img class="imgs-two" alt="dosai-image" src="./assets/dosai1.jpg">
+              </div>
+              <!-- <div class="spl-h2">
+                Idly with Curry
+              </div> -->
+            </div>
+            <div class="back">
+              <div class="flip-content1">
+                <div class="flip-cnt-h1">
+                  Idly with Curry
+                </div>
+                <div class="flip-cnt-txt">
+                  Idli or idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as
+                  breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting
+                  of fermented black lentils and rice.
+                </div>
+                <div class="public-review">
+                  <div class="like-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          thumb_up
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">12 Likes</div>
+                  </div>
+                  <div class="comment-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          maps_ugc
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">6 Comments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-onecnt3" ontouchstart="this.classList.toggle('hover')">
+          <div class="flipper-img">
+            <div class="front">
+              <div class="img-three">
+                <img class="imgs-three" alt="idiyappam-image" src="./assets/idiyappam.jpg">
+              </div>
+              <!--  <div class="spl-h3">
+                Idly with Curry
+              </div> -->
+            </div>
+            <div class="back">
+              <div class="flip-content1">
+                <div class="flip-cnt-h1">
+                  Idly with Curry
+                </div>
+                <div class="flip-cnt-txt">
+                  Idli or idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as
+                  breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting
+                  of fermented black lentils and rice.
+                </div>
+                <div class="public-review">
+                  <div class="like-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          thumb_up
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">12 Likes</div>
+                  </div>
+                  <div class="comment-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          maps_ugc
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">6 Comments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-onecnt4" ontouchstart="this.classList.toggle('hover')">
+          <div class="flipper-img">
+            <div class="front">
+              <div class="img-four">
+                <img class="imgs-four" alt="chicken-image" src="./assets/chick.jpg">
+              </div>
+              <!--  <div class="spl-h4">
+                Idly with Curry
+              </div> -->
+            </div>
+            <div class="back">
+              <div class="flip-content1">
+                <div class="flip-cnt-h1">
+                  Idly with Curry
+                </div>
+                <div class="flip-cnt-txt">
+                  Idli or idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as
+                  breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting
+                  of fermented black lentils and rice.
+                </div>
+                <div class="public-review">
+                  <div class="like-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          thumb_up
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">12 Likes</div>
+                  </div>
+                  <div class="comment-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          maps_ugc
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">6 Comments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-onecnt5" ontouchstart="this.classList.toggle('hover')">
+          <div class="flipper-img">
+            <div class="front">
+              <div class="img-five">
+                <img class="imgs-six" alt="mutton-image" src="./assets/chick.jpg">
+              </div>
+              <!--  <div class="spl-h5">
+                Idly with Curry
+              </div> -->
+            </div>
+            <div class="back">
+              <div class="flip-content1">
+                <div class="flip-cnt-h1">
+                  Idly with Curry
+                </div>
+                <div class="flip-cnt-txt">
+                  Idli or idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as
+                  breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting
+                  of fermented black lentils and rice.
+                </div>
+                <div class="public-review">
+                  <div class="like-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          thumb_up
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">12 Likes</div>
+                  </div>
+                  <div class="comment-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          maps_ugc
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">6 Comments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-onecnt6" ontouchstart="this.classList.toggle('hover')">
+          <div class="flipper-img">
+            <div class="front">
+              <div class="img-six">
+                <img class="imgs-five" alt="sambar-image" src="./assets/sambar.jpg">
+              </div>
+              <!-- <div class="spl-h6">
+                Idly with Curry
+              </div> -->
+            </div>
+            <div class="back">
+              <div class="flip-content1">
+                <div class="flip-cnt-h1">
+                  Idly with Curry
+                </div>
+                <div class="flip-cnt-txt">
+                  Idli or idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as
+                  breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting
+                  of fermented black lentils and rice.
+                </div>
+                <div class="public-review">
+                  <div class="like-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          thumb_up
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">12 Likes</div>
+                  </div>
+                  <div class="comment-cnt">
+                    <div class="like-img">
+                      <mat-icon><span class="material-symbols-outlined">
+                          maps_ugc
+                        </span></mat-icon>
+                    </div>
+                    <div class="like-text">6 Comments</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+
+  <div class="scroll-to-top" class="to-top">
+    <button type="button" class="btn active" data-toggle="button" aria-pressed="true" (click)="scrollToTop()">
+      <mat-icon class="top-line"> <span class="material-symbols-outlined">
+          straight
+        </span></mat-icon>
+    </button>
+  </div>
+</div>

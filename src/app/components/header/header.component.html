@@ -1,0 +1,188 @@
+<div class="menu-header">
+  <!-- <div class="hd-main">
+    <div class="header-text">
+      <div class="img-clss">
+        <img class="img-logo" alt="My image name" src="./assets/ganesha1.jpg" (click)="onLogo()">
+        
+      </div>
+      <div class="res-name" (click)="onCutlery()">
+        <div class="res-txt">{{site_name}}
+          <i class="fa fa-cutlery besteck" aria-hidden="true"> </i></div>
+      </div>
+    </div>
+  </div> -->
+  <div class="right-banner">
+    <div>
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button mat-icon-button class="side-Button" (click)="sidenav.toggle();onClick()" fxShow="true" fxHide.gt-sm>
+            <mat-icon>menu</mat-icon>
+          </button>
+          <div class="hd-main">
+            <div class="header-text">
+              <div class="img-clss">
+                <img class="img-logo" alt="My image name" src="./assets/logo_opt.jpg" (click)="onLogo()">
+              </div>
+              <div class="res-name" (click)="onCutlery()">
+                <div class="res-txt">{{site_name}}
+                  <i class="fa fa-cutlery besteck" aria-hidden="true"> </i></div>
+              </div>
+            </div>
+          </div>
+
+          <div fxShow="true" fxHide.lt-md="true" class="menu-list-dt">
+            <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+           <!--  <a href="/home" mat-button>
+              <mat-icon> <span class="material-symbols-outlined">
+                  home
+                </span>
+              </mat-icon>
+              HOME
+            </a> -->
+            <a class="menu_name" href="/aboutus" mat-button>
+              <mat-icon> <span class="material-symbols-outlined">
+                  info
+                </span>
+              </mat-icon>
+              ABOUT US
+            </a>
+            <a  class="menu_name" href="/allviewmoredishes" mat-button>
+              <mat-icon>
+                <span class="material-symbols-outlined">
+                  restaurant_menu
+                </span>
+              </mat-icon>
+              MENU
+            </a>
+
+            <a class="menu_name" href="/contactus" mat-button>
+              <mat-icon>
+                <span class="material-symbols-outlined">
+                  contacts
+                </span>
+              </mat-icon>
+              CONTACT US
+            </a>
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <mat-sidenav-container fxFlexFill>
+        <mat-sidenav #sidenav>
+          <mat-nav-list>
+            <a href="/home" mat-list-item>
+              <mat-icon> <span class="material-symbols-outlined">
+                  home
+                </span>
+              </mat-icon>
+              HOME
+            </a>
+            <a href="/aboutus" mat-list-item>
+              <mat-icon> <span class="material-symbols-outlined">
+                  info
+                </span>
+              </mat-icon>
+              ABOUT US
+            </a>
+            <a href="/allviewmoredishes" mat-list-item>
+              <mat-icon>
+                <span class="material-symbols-outlined">
+                  restaurant_menu
+                </span>
+              </mat-icon>
+              MENU
+            </a>
+
+            <a href="/contactus" mat-button>
+              <mat-icon>
+                <span class="material-symbols-outlined">
+                  contacts
+                </span>
+              </mat-icon>
+              CONTACT US
+            </a>
+            <a (click)="sidenav.toggle();onCLose()" mat-list-item>
+              <mat-icon>close</mat-icon> Close
+            </a>
+          </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content fxFlexFill *ngIf="navBar"></mat-sidenav-content>
+      </mat-sidenav-container>
+
+
+      <!--  <mat-toolbar class="menu-lstdn"> -->
+      <!-- <div fxHide.gt-xs class="menu-list">
+        <button mat-icon-button (click)="onToggleSideNav()">
+          <mat-icon><span class="material-symbols-outlined">
+              menu_open
+            </span></mat-icon>
+        </button>
+      </div> -->
+
+
+      <!-- Actual comment -->
+      <!-- <div>
+  <a routerLink="/dashboard">Home</a>
+</div> -->
+
+      <!-- <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+          <li>
+            <a routerLink="/dashboard">HOME</a>
+          </li>
+          <li>
+            <a routerLink="/home">ABOUT US</a>
+          </li>
+          <li>
+            <a routerLink="/allviewmoredishes">MENU</a>
+          </li>
+          <li>
+            <a routerLink="/home">CONTACT US</a>
+          </li>
+        </ul>
+      </div> -->
+
+
+      <!-- Actual comment -->
+      <!--  <mat-nav-list class="list-horizontal">
+          <mat-list-item class="burger" (click)="toggleMenu()"> 
+
+          </mat-list-item>
+          <mat-list-item>
+            <a href style="text-decoration: underline;">HOME</a>
+          </mat-list-item>
+          <mat-list-item>
+            <a href>ABOUT US</a>
+          </mat-list-item>
+          <mat-list-item>
+            <a (click)="onViewMore()">MENU</a>
+          </mat-list-item>
+         
+          <mat-list-item>
+            <a href>CONTACT US</a>
+          </mat-list-item>
+          <mat-icon><span class="material-symbols-outlined openicon">
+            menu_open
+            </span></mat-icon>
+        </mat-nav-list> -->
+      <!-- 
+      </div> -->
+      <!-- <div class="search-btn">
+        <mat-toolbar [class.active]="toggleSearch">
+          <mat-toolbar-row>
+            <button class="search-icon" mat-icon-button (click)="openSearch()">
+              <mat-icon>search</mat-icon>
+            </button>
+            <input class="search-control" type="text" placeholder="Search" [(ngModel)]="searchText" #searchbar>
+            <button class="search-close" mat-button mat-icon-button (click)="searchClose()">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-toolbar-row>
+        </mat-toolbar>
+      </div> -->
+      <!--  </mat-toolbar> -->
+    </div>
+
+
+
+  </div>

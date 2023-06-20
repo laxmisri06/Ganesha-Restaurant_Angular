@@ -1,0 +1,290 @@
+.main-footer {
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color: #292929;
+  width: 100%;
+  float: left;
+  padding-top: 2%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../../../assets/footerimage.jpg);
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.footer-heading {}
+
+.head-one {
+  color: whitesmoke;
+  font-size: 30px;
+  font-style: oblique;
+  font-family: cursive;
+}
+
+.maps-fld {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+
+
+a.map-background {
+  color: #fd7e14;
+  font-size: 26px;
+}
+
+.copyrights-txt {
+  /*  display: flex; */
+  width: 100%;
+}
+
+.cpy-left {
+  /*   width: 60%; */
+  color: whitesmoke;
+  padding-top: 20px;
+  font-size: 21px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.cpy-right {
+  color: grey;
+  float: right;
+  width: 40%;
+}
+
+
+/* here's what you're looking for B-) */
+mat-nav-list.footerlist-horizontal {
+  padding: 0;
+  margin: 0;
+
+  .mat-list-item {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    color: grey;
+    margin: 26px;
+    font-size: inherit;
+  }
+
+  .mat-list-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+}
+
+.mat-toolbar {
+  background: transparent;
+  color: rgba(0, 0, 0, .87);
+}
+
+.contact-us {
+  font-weight: bold;
+  color: #fd7e14;
+  padding-top: 3%;
+  font-size: 54px;
+  font-family: emoji;
+}
+
+.address-main {
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  color: whitesmoke;
+  font-family: cursive;
+  font-size: 20px;
+  display: flex;
+  border-bottom: 2px dotted grey;
+
+}
+
+.address-txt {
+  width: 25%;
+  padding: 10px;
+}
+
+.addr-zero {
+  padding-bottom: 10px;
+  font-family: emoji;
+  font-size: 28px;
+  border-bottom: 1px dotted grey;
+}
+
+.addr-first,
+.addr-second,
+.addr-third {
+  padding-bottom: 2%;
+  display: block;
+  padding-top: 10px;
+}
+
+.phone {
+  padding-bottom: 10px;
+  font-family: emoji;
+  font-size: 28px;
+  border-bottom: 1px dotted grey;
+}
+
+.phonenumber,
+.addr-third {
+  padding-top: 10px;
+}
+
+.Email {
+  padding-top: 25px;
+  font-family: emoji;
+  font-size: 28px;
+  border-bottom: 1px dotted grey;
+}
+
+.telephone-Email {
+  width: 25%;
+  padding: 10px;
+  font-family: cursive;
+  padding-top: 10px;
+}
+
+.phonenumber,
+.email-add {
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.support-txt {
+  width: 20%;
+  padding: 10px;
+}
+
+.subscribe-cnt {
+  width: 30%;
+  padding: 10px;
+}
+
+.support-links,
+.subscribe-here {
+  font-family: emojo;
+  padding-bottom: 10px;
+  font-size: 28px;
+  border-bottom: 1px dotted grey;
+}
+
+.private-policy,
+.service,
+.contactus,
+.Support,
+.email-control {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.email-control {
+  background-color: white;
+  border-radius: 20px;
+}
+
+button.go-icon {
+  padding: 10px 10px 14px 10px;
+  color: green;
+  background-color: orange;
+  border-radius: 12px;
+  position: relative;
+  /* top: 2px; */
+  left: -22px;
+}
+
+.sub-cnt {
+  padding-top: 20px;
+  color: grey;
+}
+
+.opening-hrs {
+  width: 25%;
+  padding: 10px;
+  font-family: cursive;
+  padding-top: 10px;
+}
+
+.h1-hrs {
+  padding-bottom: 10px;
+  font-family: emoji;
+  font-size: 28px;
+  border-bottom: 1px dotted grey;
+}
+
+.weekdays,
+.timings-weekday {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.weekEnd {
+  color: red;
+  animation: blinker 1s linear infinite;
+  padding-top: 20px;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.google-map {
+  padding: 2px;
+}
+
+.google-mao-style {
+  width: 400px;
+  height: 250px;
+}
+
+/* Media query */
+@media(max-width:959px) {
+
+  .head-one {
+    color: whitesmoke;
+    font-size: 30px;
+    font-style: oblique;
+    font-family: cursive;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .address-main {
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    color: whitesmoke;
+    font-family: cursive;
+    display: block;
+    font-size: 20px;
+    border-bottom: 2px dotted grey;
+  }
+
+  .address-txt,
+  .telephone-Email,
+  .opening-hrs {
+    width: 100%;
+  }
+
+  .google-map {
+
+    text-align: center;
+    width: 100%;
+  }
+
+  .google-mao-style {
+    width: 300px;
+    height: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .cpy-left {
+    color: whitesmoke;
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}

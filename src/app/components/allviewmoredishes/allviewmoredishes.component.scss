@@ -1,0 +1,318 @@
+#container-dishes {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: block;
+  font-family: OpenSans;
+}
+
+
+
+.menu-container-dish {
+  width: 100%;
+  background: url(../../../assets/menubk1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.dish-tablo {
+  width: 100%;
+  display: flex;
+}
+
+.dish-tablo-left,
+.dish-tablo-right {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+
+.Thali-container,
+.suppen-container,
+.vorspeisen-container,
+.idly-container,
+.Fisch-container,
+.vege-container,
+.idiyappam-container,
+.poori-container,
+.Dessert-container {
+  padding-left: 6%;
+  padding-right: 6%;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Thali-h1,
+.suppen-h1,
+.vorspeisen-h1,
+.idly-h1,
+.Fisch-h1,
+.vege-h1,
+.idiyappam-h1,
+.poori-h1,
+.Dessert-h1 {
+  font-size: 30px;
+  color: orange;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Thali-content1,
+.Thali-content2,
+.suppen-content1,
+.suppen-content2,
+.Thali-content3,
+.main-dishmenu1,
+.main-dishmenu2,
+.main-dishmenu3,
+.main-dishmenu4,
+.main-dishmenu5,
+.main-dishmenu6,
+.main-dishmenu7,
+.main-dishmenu8,
+.idly-content1,
+.idly-content2,
+.Fisch-content1,
+.Fisch-content2,
+.vege-content1,
+.vege-content2,
+.vege-content3,
+.idiyappam-content1,
+.idiyappam-content2,
+.poori-content1,
+.poori-content2,
+.Dessert-content1,
+.Dessert-content2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Thali-left1,
+.Thali-left2,
+.suppen-left1,
+.Thali-left3,
+.idly-left2,
+.dish-menu1-lft1,
+.dish-menu2-lft2,
+.dish-menu3-lft3,
+.dish-menu4-lft4,
+.dish-menu5-lft5,
+.dish-menu6-lft6,
+.dish-menu7-lft7,
+.dish-menu8-lft8,
+.idly-left1,
+.Fisch-left1,
+.Fisch-left2,
+.vege-left1,
+.vege-left2,
+.vege-left3,
+.idiyappam-left1,
+.idiyappam-left2,
+.poori-left1,
+.poori-left2,
+.poori-left3,
+.Dessert-left1,
+.Dessert-left2 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.Thali-right1,
+.Thali-right2,
+.suppen-right1,
+.Thali-right3,
+.idly-right1,
+.Fisch-right1,
+.vege-right1,
+.vege-right2,
+.vege-right3,
+.idiyappam-right1,
+.poori-right1,
+.poori-right2,
+.Dessert-right1 {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.dish-menu1-rght1,
+.dish-menu2-rght2,
+.dish-menu3-rght3,
+.dish-menu4-rght4,
+.dish-menu5-rght5,
+.dish-menu6-rght6,
+.dish-menu7-rght7,
+.dish-menu8-rght8 {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-dishmenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Media Query */
+@media(max-width:959px) {
+  .dish-tablo {
+    width: 100%;
+    display: grid;
+  }
+
+  .dish-tablo-left,
+  .dish-tablo-right {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  /* .Thali-content1, */
+  /* .Thali-content2, */
+  /* .suppen-content1, */
+  /* .suppen-content2, */
+  .Thali-content3,
+  .idly-content1,
+  .idly-content2,
+  .vege-content3,
+  .idiyappam-content1,
+  .idiyappam-content2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: grid;
+    /*  display: flex;
+  justify-content: space-between; */
+  }
+
+  .Thali-content1,
+  .Thali-content2,
+  .suppen-content1,
+  .suppen-content2,
+  .Fisch-content1,
+  .vege-content3,
+  .poori-content1,
+  .poori-content2,
+  .vege-content1,
+  .vege-content2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: contents;
+  }
+
+  .Thali-left1,
+  .Thali-left2,
+  /* .suppen-left1, */
+  .Thali-left3,
+  .idly-left2,
+  .dish-menu1-lft1,
+  .dish-menu2-lft2,
+  .dish-menu3-lft3,
+  .dish-menu4-lft4,
+  .dish-menu5-lft5,
+  .dish-menu6-lft6,
+  .dish-menu7-lft7,
+  .dish-menu8-lft8,
+  .idly-left1,
+  .Fisch-left1,
+  .Fisch-left2,
+  .vege-left1,
+  .vege-left2,
+  .vege-left3,
+  .idiyappam-left1,
+  .idiyappam-left2,
+  .poori-left1,
+  .poori-left2,
+  .poori-left3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .Thali-right1,
+  .Thali-right2,
+  /* .suppen-right1, */
+  .Thali-right3,
+  .idly-right1,
+  .Fisch-right1,
+  .vege-right1,
+  .vege-right2,
+  .vege-right3,
+  .idiyappam-right1,
+  .poori-right1,
+  .poori-right2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .suppen-left1,
+  .suppen-right1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .Fisch-content2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: contents;
+  }
+
+ 
+
+  .Dessert-content1,
+  .Dessert-content2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: contents;
+  }
+
+  .Dessert-left1,
+  .Dessert-left2,
+  .Dessert-right1,
+  .idly-content2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+}

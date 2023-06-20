@@ -1,0 +1,979 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header-one {
+  width: 100%;
+  float: left;
+  display: flex;
+}
+
+.header-left {
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.Welcome-content {
+  width: 100%;
+  padding: 20px;
+  padding: 160px 94px;
+  font-size: 35px;
+}
+
+.Welcome-note {
+  //padding-top:10px;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 100%;
+  //padding: 10px;
+  font-size: 35px;
+}
+
+.Breakfast-menumain:hover,
+.lunch-menumain:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.healthy-cnt {
+  padding-top: 6%;
+}
+
+.meals {
+  color: red;
+  animation: blinker 1s linear infinite;
+}
+
+.img1-card {
+  width: 100%;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.opem-timimgs {
+  color: whitesmoke;
+  width: 100%;
+  padding-top: 77px;
+  font-size: 27px;
+}
+
+.food-timings {
+  padding: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: medium;
+  width: 36%;
+}
+
+.header-right {
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  //display: flex;
+}
+
+.background-img {}
+
+/* Search-bar */
+.search-icon {
+  background-color: white;
+}
+
+.search-control {
+  background-color: white;
+}
+
+.search-close {
+  background-color: white;
+}
+
+
+
+.right-content {
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../../../assets/mainimg.jpg);
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.best-dishes-content {
+  float: left;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../../../assets/southindian.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.dishes-prices {
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color: #f1efef;
+  width: 100%;
+  float: left;
+  padding-top: 4%;
+  display: flex;
+
+}
+
+.dishes-right {
+  width: 50%;
+}
+
+.dishes-h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 38px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'FontAwesome';
+}
+
+.dishes-h1-content {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+  font-family: 'FontAwesome';
+}
+
+.dishes-h1-content p:hover {
+  cursor: pointer;
+  transition: 5s;
+}
+
+.dishes-left {
+  width: 50%;
+  color: black;
+}
+
+.dishlft-hd {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.disheslft-txt {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-size: 21px;
+
+}
+
+.dishes-image-right {
+  position: relative;
+  left: 0;
+  top: 0;
+  /*  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../../../assets/roll.jpg);
+  background-size: cover;
+  position: relative; */
+}
+
+.slider {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-images {
+  /* height: 100vh; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(25, 12, 41); */
+}
+
+.img-main-cont {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+}
+
+.image-container img {
+  height: 400px;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+
+.image-container input {
+  display: none;
+}
+
+.btn-dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.btn-dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #fff 3px;
+  cursor: pointer;
+  transition: all 15s ease;
+  margin: 5px;
+}
+
+.btn-dots label :hover {
+  background: #fff;
+}
+
+#img1:checked~.m1 {
+  margin-left: 0;
+}
+
+#img2:checked~.m2 {
+  margin-left: -100%;
+}
+
+#img3:checked~.m3 {
+  margin-left: -200%;
+}
+
+#img4:checked~.m4 {
+  margin-left: -300%;
+}
+
+.imginside-one {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 60%;
+  float: right;
+  border-radius: 20px;
+}
+
+.imginside-two {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 40%;
+  border-radius: 20px;
+  height: 45vh;
+}
+
+.dish-tablo {
+  padding: 10px;
+}
+
+.dish-menus {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.main-dishmenu {
+  display: flex;
+  font-size: 25px;
+}
+
+.dish-menu1-lft {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+
+}
+
+.dish-menu1-rght {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+  text-align: right;
+  font-weight: bold;
+
+}
+
+.dish-menu2-lft {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+}
+
+.dish-menu2-rght {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.dish-menu3-lft {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+}
+
+.dish-menu3-rght {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 58%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.dish-menu4-lft {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+}
+
+.dish-menu4-rght {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.dish-menu5-lft {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+}
+
+.dish-menu5-rght {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.dish-menu6-lft {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+}
+
+.dish-menu6-rght {
+  border-bottom: 2px dotted white;
+  padding-bottom: 6px;
+  width: 50%;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+
+.view-btn {
+  background-color: #e0b124;
+  border: 3px solid white;
+  padding: 15px 25px 15px 25px;
+  border-radius: 50px;
+  transition: all 0.15s ease-in-out;
+  color: white;
+  font-size: 20px;
+}
+
+.view-btn:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+.app-color {
+  background-color: #fd7e14;
+}
+
+.search-btn {
+  width: 45%;
+  padding-top: 17px;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: transparent;
+}
+
+.specialMeals-content {
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color: white;
+  width: 100%;
+  float: left;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.splMeals-txt {
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 11%;
+  padding-right: 15%;
+}
+
+.spl-txt {
+  font-size: 24px;
+  text-align: center;
+}
+
+.splMeals-imgcontainer {
+  width: 100%;
+  float: left;
+}
+
+.splMeals-img {
+  width: 100%;
+  float: left;
+}
+
+.splMeals-header {
+  width: 100%;
+  float: left;
+  font-size: 45px;
+  color: #fd7e14;
+  text-align: center;
+}
+
+.img-onecnt1,
+.img-onecnt2,
+.img-onecnt3,
+.img-onecnt4,
+.img-onecnt5,
+.img-onecnt6 {
+  display: grid;
+  float: left;
+  width: 33.3%;
+  padding: 15px;
+  float: left;
+}
+
+.img-onecnt1,
+.img-onecnt2,
+.img-onecnt3,
+.img-onecnt4,
+.img-onecnt5,
+.img-onecnt6 {
+  perspective: 1000px;
+}
+
+.img-onecnt1:hover .flipper-img,
+.img-onecnt2:hover .flipper-img,
+.img-onecnt3:hover .flipper-img,
+.img-onecnt4:hover .flipper-img,
+.img-onecnt5:hover .flipper-img,
+.img-onecnt6:hover .flipper-img {
+  transform: rotateY(180deg);
+}
+
+.img-onecnt1,
+.img-onecnt2,
+.img-onecnt3,
+.img-onecnt4,
+.img-onecnt5,
+.img-onecnt6,
+.front,
+.back {
+  height: 340px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* flip speed goes here */
+.flipper-img {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  width: 100%;
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  background-color: #fd7e14;
+  width: 100%;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+.flip-cnt-h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.flip-cnt-txt {
+  color: black;
+}
+
+.flip-cnt-txt {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.public-review {
+  display: flex;
+  width: 100%;
+  color: white;
+  padding: 20px
+}
+
+.like-cnt,
+.comment-cnt {
+  width: 100%;
+  display: flex;
+}
+
+.like-text {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.img-one,
+.img-two,
+.img-three,
+.img-four,
+.img-five,
+.img-six {}
+
+.imgs-one,
+.imgs-two,
+.imgs-three,
+.imgs-four,
+.imgs-five,
+.imgs-six {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.spl-h1,
+.spl-h2,
+.spl-h3,
+.spl-h4,
+.spl-h5,
+.spl-h6 {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+
+
+.mat-card {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
+  padding: 16px;
+  border-radius: 25px;
+}
+
+.more-btn {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: orange;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.lunch-menumain {
+  padding-top: 3%;
+}
+
+.to-top {
+  bottom: 0;
+  cursor: pointer;
+  margin: 0 8px 12px 0;
+  position: fixed;
+  right: 0;
+  background-color: #3693aa;
+}
+
+.show-scrolltop {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.top-line {
+  color: white;
+}
+
+button.btn.active {
+  padding: 12px 15px 12px 15px;
+}
+
+
+/* Slide-show */
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #111111;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+.opensidenav {
+  height: 100%;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+/* Media Query */
+@media(max-width:959px) {
+
+
+  mat-toolbar {
+    border-radius: 0px;
+  }
+
+  .Welcome-content {
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .header-one {
+    width: 100%;
+    float: left;
+    display: block;
+  }
+
+  .header-left {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .Welcome-note {
+    color: whitesmoke;
+    font-weight: bold;
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .opem-timimgs {
+    color: whitesmoke;
+    width: 100%;
+    padding-top: 46px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .header-right {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .food-timings {
+    padding: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+    width: 61%;
+  }
+
+  .dishes-prices {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #f1efef;
+    width: 100%;
+    float: left;
+    padding-top: 4%;
+    display: block;
+  }
+
+  .dishes-left {
+    width: 100%;
+    color: black;
+  }
+
+  .dishlft-hd {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .dilft-txt {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .main-dishmenu {
+    display: flex;
+    font-size: 16px;
+  }
+
+  .view-more-dishes {
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .view-btn {
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    border: 1px solid white;
+    color: black;
+  }
+
+
+
+  .imginside-one {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 50%;
+    float: right;
+    border-radius: 20px;
+  }
+
+  .imginside-two {
+    position: absolute;
+    top: 55px;
+    left: 56px;
+    width: 45%;
+    border-radius: 20px px;
+    height: 18vh;
+  }
+
+  .splMeals-header {
+    width: 100%;
+    font-size: 30px;
+    color: #fd7e14;
+    text-align: center;
+  }
+
+  .spl-txt {
+    font-size: 13px;
+    text-align: center;
+    padding: 5%;
+  }
+
+  span.site-name {
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .dishes-h1 {
+    color: #12b841;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    /* padding-bottom: 15px; */
+    font-family: "FontAwesome";
+  }
+
+  .dishes-right {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .splMeals-imgcontainer {
+    width: 100%;
+    float: left;
+    display: grid;
+  }
+
+  .splMeals-img {
+    width: 100%;
+    float: left;
+    display: grid;
+  }
+
+  .img-onecnt1,
+  .img-onecnt2,
+  .img-onecnt3,
+  .img-onecnt4,
+  .img-onecnt5,
+  .img-onecnt6,
+  .front,
+  .back {
+    height: 411px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+
+  .Breakfast-menumain,
+  .lunch-menumain {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}

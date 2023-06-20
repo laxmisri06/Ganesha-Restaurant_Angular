@@ -1,0 +1,151 @@
+.contact-main-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.content-header {
+  width: 100%;
+  float: left;
+  font-size: 45px;
+  color: #fd7e14;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.card-location,
+.card-phone,
+.card-email,
+.card-workinghours {
+  width: 20%;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-around;
+  /*  padding-top: 20px;
+  padding-bottom: 20px; */
+  padding: 20px;
+  /* text-align: center; */
+  width: 100%;
+}
+
+.example-card {
+  width: 100%;
+  height: 272px;
+  background-color: #f8f6f6;
+}
+
+.mat-titles {
+  font-size: 28px;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card-contents {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.sym-container {
+  width: 101%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mat-symbols {
+  text-align: center;
+  font-weight: bold;
+  /* color: orange; */
+  padding: 8px 10px 8px 10px;
+  width: 73px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: #9e9b94
+}
+
+.card-location :hover,
+.card-phone :hover,
+.card-email :hover,
+.card-workinghours :hover {
+  cursor: pointer;
+  background-color: #ded3b1;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.mat-card-header {
+  display: grid
+}
+
+.mat-icon {
+  user-select: none;
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: 47px;
+  width: 57px;
+  overflow: hidden;
+  font-size: 36px;
+}
+
+.google-map {
+  padding: 2px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.google-mao-style {
+  width: 100%;
+  height: 75vh;
+}
+
+/* Media query */
+@media(max-width:959px) {
+  .content-header {
+    width: 100%;
+    float: left;
+    font-size: 26px;
+    color: #fd7e14;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card-location,
+  .card-phone,
+  .card-email,
+  .card-workinghours {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .row-container {
+    padding: 20px;
+    width: 100%;
+    padding-top: 49px;
+    display: block;
+  }
+
+  .google-mao-style {
+    width: 100%;
+    height: 45vh;
+    padding: 21px;
+  }
+
+  .card-location :hover,
+  .card-phone :hover,
+  .card-email :hover,
+  .card-workinghours :hover {
+    cursor: pointer;
+    background-color: #ded3b1;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
+}
